@@ -5,4 +5,4 @@
 **Stack**|**Version**
 ---------|-----------
 Java        | 8.0
-spring-boot | 
+spring-boot | 2.3.5.RELEASE/Hoxton.SR8
