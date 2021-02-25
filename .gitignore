@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+/country-services/.mvn
+/country-services/country-services.iml
+/country-services/HELP.md
+/country-services/mvnw
+/country-services/mvnw.cmd
+/country-services/.idea
