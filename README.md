@@ -59,3 +59,6 @@ public interface CountriesProxy {
 #### Frontend implementation
 
 >ng new country-services-ui
+>npm install bootstrap
+Create the proxy file to connect backend
+>ng serve --proxy-config proxy.config.json -o
