@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Country name" aria-label="Recipient's username"
+      aria-describedby="basic-addon2" [(ngModel)] = "countryName">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button" (click)="getByName()">Search</button>
+    </div>
+  </div>
+
+  <div *ngIf=(errorMessage) class="alert alert-danger" role="alert">
+    {{ errorMessage }}
+  </div>
+</div>
+<table *ngIf=(countries) class="table table-dark content">
+  <thead>
+    <tr>
+      <th scope="col">Code</th>
+      <th scope="col">Name</th>
+      <th scope="col">Capital</th>
+      <th scope="col">Population</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let country of countries">
+    <tr>
+      <th scope="row">{{ country.country_code }}</th>
+      <td>{{ country.name }}</td>
+      <td>{{ country.capital }}</td>
+      <td>@{{ country.population }}</td>
+    </tr>
+  </tbody>
+</table>
